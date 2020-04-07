@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OService</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"  />
+    </head>
+    <body>
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OService</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Abrir Ordem de Serviço</legend>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="destino">Destino</label>
+                            <div class="col-md-8">
+                                <select id="destino" name="destino" class="form-control">
+                                    <option value="Manutenção">Manutenção</option>
+                                    <option value="TI">TI</option>
+                                    <option value="Costureira">Costureira</option>
+                                    <option value="Limpeza">Limpeza</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="solicitante">Solicitante</label>  
+                            <div class="col-md-8">
+                                <input id="solicitante" name="solicitante" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="solicitacao">Solicitação</label>
+                            <div class="col-md-8">                     
+                                <textarea class="form-control" id="solicitacao" name="solicitacao"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Button -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="enviar"></label>
+  <div class="col-md-8">
+    <button id="enviar" name="enviar" class="btn btn-success">Enviar Solicitação</button>
+  </div>
+</div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div> <!-- /container -->
+
+    </body>
+</html>
